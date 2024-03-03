@@ -40,7 +40,7 @@ function setupGrid(size) {
 
 function changeColour(e) {
     if (e.type === 'mouseover' && !mouseDown) return;
-    console.log("mouse clicked");
+    e.target.style.backgroundColor = currentColour;
 }
 
 window.onload = () => {
